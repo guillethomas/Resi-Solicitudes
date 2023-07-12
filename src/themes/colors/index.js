@@ -3,6 +3,6 @@ export const COLORES = {
     secundario: '#B8B08D',
     texto: '#202C39',
     background:'#FDF8ED',
-    blanco:'#FFFFF ' ,
+    blanco:'#FFFFFF' ,
     negro: '#00000',
 }
