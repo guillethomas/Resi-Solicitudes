@@ -1,5 +1,6 @@
-import { FlatList, SafeAreaView, StyleSheet, View , Text} from 'react-native';
+import { FlatList, SafeAreaView, View, StyleSheet} from 'react-native';
 import { Header, ItemCategoria } from './components';
+import { Categorias} from './screens'
 import CATEGORIAS from './constants/data/categories.json'
 
 export default function App() {
@@ -8,19 +9,11 @@ export default function App() {
     console.warn({idCategoria})
   }
 
-
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
           <Header title='Categorías'/>
-          <FlatList 
-            data={CATEGORIAS} 
-            renderItem={({item})=> <ItemCategoria {...item} onSelectCategoria={onSelectCategoria}/>} 
-            keyExtractor={(item)=> item.id}
-            style={styles.contenedorLista}
-            contentContainerStyle={styles.lista}
-            showsVerticalScrollIndicator={false}
-          />
+          <Categorias/>
       </View>
     </SafeAreaView>
   );
@@ -29,17 +22,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-  },
-
-  contenedorLista: {
-    margin: 15,
-
-  },
-
-  lista: {
-    gap: 15,
-    
   },
 
 });
