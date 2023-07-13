@@ -3,18 +3,15 @@ import { ItemCategoria } from '../../components';
 import CATEGORIAS from '../../constants/data/categories.json'
 import { styles } from './styles';
 
-function Categorias() {
-
-  const onSelectCategoria = (idCategoria) => {
-    console.warn({idCategoria})
-  }
+function Categorias(categoriaSeleccionada) {
   
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
           <FlatList 
             data={CATEGORIAS} 
-            renderItem={({item})=> <ItemCategoria {...item} onSelectCategoria={onSelectCategoria}/>} 
+            renderItem={({item})=> <ItemCategoria {...item} 
+            categoriaSeleccionada={()=>categoriaSeleccionada()}/>} 
             keyExtractor={(item)=> item.id}
             style={styles.contenedorLista}
             contentContainerStyle={styles.lista}
