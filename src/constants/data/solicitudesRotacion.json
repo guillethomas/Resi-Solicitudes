@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "nombre": "Marcela",
+        "apellido": "Gómez",
+        "dni":"12343212",
+        "fechaNacimiento":"03/07/1991",
+        "hospitalOrigen":"Hospital Gutiérrez",
+        "anioResidencia":"2",
+        "area":"Fertilidad masculina",
+        "inicio":"Enero 2024",
+        "fin":"Marzo 2024",
+        "fechaSolicitud":"13/01/23",
+        "estado":"Aceptada"
+    },
+
+    {
+        "id": 2,
+        "nombre": "Juan Carlos",
+        "apellido": "Pérez",
+        "dni":"546322356",
+        "fechaNacimiento":"04/08/1994",
+        "hospitalOrigen":"Hospital Pirovano",
+        "anioResidencia":"3",
+        "area":"Endocrinología",
+        "inicio":"Noviembre 2023",
+        "fin":"Marzo 2024",
+        "fechaSolicitud":"04/04/2023",
+        "estado":"Aceptada"
+    },
+
+    {
+        "id": 3,
+        "nombre": "Cristina",
+        "apellido": "Blasetti",
+        "dni":"988800112",
+        "fechaNacimiento":"17/07/1996",
+        "hospitalOrigen":"Hospital Gutiérrez",
+        "anioResidencia":"1",
+        "area":"Citología exfoliativa",
+        "inicio":"Diciembre 2023",
+        "fin":"Enero 2024",
+        "fechaSolicitud":"18/06/23",
+        "estado":"Rechazada"
+    },
+
+    {
+        "id": 4,
+        "nombre": "Joaquín",
+        "apellido": "Sánchez",
+        "dni":"11223312",
+        "fechaNacimiento":"23/04/1995",
+        "hospitalOrigen":"Hospital Argerich",
+        "anioResidencia":"3",
+        "area":"Bacteriología y micología",
+        "inicio":"Marzo 2024",
+        "fin":"Mayo 2023",
+        "fechaSolicitud":"05/06/23",
+        "estado":"Aceptada"
+    },
+
+    {
+        "id": 5,
+        "nombre": "Adriana",
+        "apellido": "Aranda",
+        "dni":"66557345",
+        "fechaNacimiento":"05/07/1993",
+        "hospitalOrigen":"Hospital Italiano",
+        "anioResidencia":"3",
+        "area":"Hematología",
+        "inicio":"Noviembre 2023",
+        "fin":"Marzo 2024",
+        "fechaSolicitud":"22/03/23",
+        "estado":"Rechazada"
+    }
+]

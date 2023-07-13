@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { View, Text, TouchableOpacity, FlatList, ImageBackground, Button } from 'react-native';
 import { styles } from './styles';
 import { InputBusqueda } from '../../components';
-import PRODUCTS from '../../constants/data/products.json';
+import SOLICITUDES from '../../constants/data/solicitudesRotacion.json';
 import { COLORES } from '../../themes';
 
 function Productos ({ categoriaSeleccionada }) {

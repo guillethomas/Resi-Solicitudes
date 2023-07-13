@@ -1,13 +1,13 @@
 import { FlatList, SafeAreaView, View, StyleSheet, Text} from 'react-native';
 import { Header, ItemCategoria } from './components';
 import { Categorias, Productos} from './screens'
-import CATEGORIAS from './constants/data/categories.json'
+import CATEGORIAS from './constants/data/solicitudesRotacion.json'
 import { useState } from 'react';
 
 export default function App() {
 
   const [estaCategoriaSeleccionada, setEstaCategoriaSeleccionada]= useState(false)
-  const tituloHeader = estaCategoriaSeleccionada ? 'Productos' : 'Categorias'
+  const tituloHeader = estaCategoriaSeleccionada ? 'Detalles de la rotación' : 'Solicitudes de rotación'
   const [guardarCategoriaSeleccionada, setGuardarCategoriaSeleccionada] = useState(null)
 
   const guardarCategoria = (idCategoria) => {

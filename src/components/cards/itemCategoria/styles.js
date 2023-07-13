@@ -4,22 +4,35 @@ import { COLORES } from "../../../themes";
 export const styles = StyleSheet.create ({
     contenedor: {
         flex:1,
-        borderRadius: 10,
-
+        borderRadius: 16,
+        backgroundColor: COLORES.primaryWeakest,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 1,
+        },
+        shadowOpacity: 0.22,
+        shadowRadius: 2.22,
+        elevation: 3,
+        padding:15,
     },
 
-    imagenFondo: {
-        width: '100%',
-        height: 150,
-        justifyContent: "flex-end",
+    nombre: {
+        fontSize:18,
+        color:  COLORES.primaryStrong,
+     
+    },
+
+    area: {
+        marginTop: 5,
+        fontSize:14,
+        color:  COLORES.neutral,
         
     },
 
-    titulo: {
-        fontSize:20,
-        fontWeight: "bold",
-        color:  COLORES.blanco,
-        padding:15,
+    periodo: {
+        fontSize:14,
+        color:  COLORES.neutral,
         
     }
 })

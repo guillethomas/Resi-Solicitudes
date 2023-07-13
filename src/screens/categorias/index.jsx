@@ -1,6 +1,6 @@
 import { FlatList, SafeAreaView, View} from 'react-native';
 import { ItemCategoria } from '../../components';
-import CATEGORIAS from '../../constants/data/categories.json'
+import SOLICITUDES from '../../constants/data/solicitudesRotacion.json'
 import { styles } from './styles';
 
 function Categorias(categoriaSeleccionada) {
@@ -9,9 +9,8 @@ function Categorias(categoriaSeleccionada) {
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
           <FlatList 
-            data={CATEGORIAS} 
-            renderItem={({item})=> <ItemCategoria {...item} 
-            categoriaSeleccionada={()=>categoriaSeleccionada()}/>} 
+            data={SOLICITUDES} 
+            renderItem={({item})=> <ItemCategoria {...item} categoriaSeleccionada={()=>categoriaSeleccionada()}/>} 
             keyExtractor={(item)=> item.id}
             style={styles.contenedorLista}
             contentContainerStyle={styles.lista}

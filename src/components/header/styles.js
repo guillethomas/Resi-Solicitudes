@@ -5,16 +5,18 @@ export const styles = StyleSheet.create({
 
     container: {
         marginTop: StatusBar.currentHeight,
-        backgroundColor: COLORES.primario,
+        backgroundColor: COLORES.blanco,
+        borderBottomColor: COLORES.primary,
+        borderBottomWidth: 3,
         height: 60,
+        padding:15,
         justifyContent: "center",
         alignItems: 'center',
     },
 
     title: {
         fontSize: 20,
-        fontWeight: "bold",
-        color: COLORES.texto, 
+        color: COLORES.primary, 
     }
 
 })
