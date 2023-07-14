@@ -20,16 +20,19 @@ export const styles = StyleSheet.create ({
     nombre: {
         fontSize:18,
         color:  COLORES.primaryStrong,
+        fontFamily: 'LatoBold'
     },
 
     area: {
         marginTop: 5,
         fontSize:14,
         color:  COLORES.neutral,
+        fontFamily: 'LatoRegular'
     },
 
     periodo: {
         fontSize:14,
         color:  COLORES.neutral,
+        fontFamily: 'LatoRegular'
     }
 })

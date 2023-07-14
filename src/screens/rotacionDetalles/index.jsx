@@ -3,7 +3,6 @@ import { styles } from './styles';
 import { COLORES } from '../../themes';
 import SOLICITUDES from '../../constants/data/solicitudesRotacion.json';
 
-
 function RotacionDetalles ({ categoriaSeleccionada }) {
 
   return (
@@ -36,6 +35,5 @@ function RotacionDetalles ({ categoriaSeleccionada }) {
     </View>
   )
 }
-
 
 export default RotacionDetalles;
