@@ -20,19 +20,16 @@ export const styles = StyleSheet.create ({
     nombre: {
         fontSize:18,
         color:  COLORES.primaryStrong,
-     
     },
 
     area: {
         marginTop: 5,
         fontSize:14,
         color:  COLORES.neutral,
-        
     },
 
     periodo: {
         fontSize:14,
         color:  COLORES.neutral,
-        
     }
 })

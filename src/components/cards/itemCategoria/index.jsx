@@ -5,7 +5,7 @@ import { COLORES } from "../../../themes";
 const ItemCategoria = ({id, nombre, apellido, area, inicio, fin, categoriaSeleccionada}) => {
 
     return (
-        <TouchableHighlight onPress={() => categoriaSeleccionada(id)} style={[styles.contenedor]} underlayColor={COLORES.primary}>
+        <TouchableHighlight onPress={() => categoriaSeleccionada(id)} style={[styles.contenedor]} underlayColor={COLORES.primaryWeak}>
                 <View>
                 <Text style={styles.nombre}>{nombre} {apellido}</Text>
                 <Text style={styles.area}>{area}</Text>

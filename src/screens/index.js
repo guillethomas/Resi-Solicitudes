@@ -1,2 +1,2 @@
-export { default as Categorias } from './categorias/index';
-export { default as Productos } from './productos/index';
+export {default as RotacionDetalles} from './rotacionDetalles/index';
+export {default as RotacionSolicitud} from './rotacionSolicitud/index';

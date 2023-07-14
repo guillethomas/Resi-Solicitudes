@@ -1,6 +1,6 @@
 import { FlatList, SafeAreaView, View, StyleSheet, Text} from 'react-native';
 import { Header, ItemCategoria } from './components';
-import { Categorias, Productos} from './screens'
+import {RotacionSolicitud, RotacionDetalles} from './screens'
 import CATEGORIAS from './constants/data/solicitudesRotacion.json'
 import { useState } from 'react';
 
@@ -26,9 +26,9 @@ export default function App() {
       <View style={styles.container}>
           <Header title={tituloHeader}/>
           {estaCategoriaSeleccionada ? (
-          <Productos categoriaSeleccionada={navegacion}/>
+          <RotacionDetalles categoriaSeleccionada={navegacion}/>
           ) : (
-          <Categorias categoriaSeleccionada={guardarCategoria} />
+          <RotacionSolicitud categoriaSeleccionada={guardarCategoria} />
           )}
       </View>
     </SafeAreaView>
