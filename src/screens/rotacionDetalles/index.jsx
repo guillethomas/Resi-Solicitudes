@@ -3,11 +3,11 @@ import { styles } from './styles';
 import { COLORES } from '../../themes';
 import SOLICITUDES from '../../constants/data/solicitudesRotacion.json';
 
-function RotacionDetalles ({ categoriaSeleccionada }) {
+function RotacionDetalles ({ categoriaSeleccionada, categoriaIdSeleccionada }) {
 
   return (
     <View>
-        <Button title='Volver' onPress={categoriaSeleccionada}></Button>
+        <Button title='Volver' onPress={categoriaSeleccionada} style={styles.boton}></Button>
         <View style={styles.contenedorCategoria}>
           <Text style={styles.textoEtiqueta}>Nombre: </Text>
           <Text style={styles.textoCategoria}>Nombre de la persona</Text>
