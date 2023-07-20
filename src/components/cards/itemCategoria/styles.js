@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { COLORES } from "../../../themes";
+import { COLORES, FUENTES } from "../../../themes";
 
 export const styles = StyleSheet.create ({
     contenedor: {
@@ -20,19 +20,19 @@ export const styles = StyleSheet.create ({
     nombre: {
         fontSize:18,
         color:  COLORES.primaryStrong,
-        fontFamily: 'LatoBold'
+        fontFamily: FUENTES.bold,
     },
 
     area: {
         marginTop: 5,
         fontSize:14,
         color:  COLORES.neutral,
-        fontFamily: 'LatoRegular'
+        fontFamily: FUENTES.regular,
     },
 
     periodo: {
         fontSize:14,
         color:  COLORES.neutral,
-        fontFamily: 'LatoRegular'
+        fontFamily: FUENTES.regular,
     }
 })

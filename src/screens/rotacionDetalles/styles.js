@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { COLORES } from '../../themes';
+import { COLORES, FUENTES } from '../../themes';
 
 
 export const styles = StyleSheet.create({
@@ -17,12 +17,12 @@ export const styles = StyleSheet.create({
   textoEtiqueta: {
     fontSize:18,
     color: COLORES.neutral,
-    fontFamily: 'LatoRegular'
+    fontFamily: FUENTES.regular,
   },
 
   textoCategoria: {
     fontSize:18,
     color: COLORES.primary,
-    fontFamily: 'LatoRegular'
+    fontFamily: FUENTES.regular,
   },
 });

@@ -5,22 +5,22 @@ import CATEGORIAS from './constants/data/solicitudesRotacion.json'
 import { useState } from 'react';
 import { ActivityIndicator } from 'react-native';
 import { useFonts } from 'expo-font';
-import { COLORES } from './themes';
+import { COLORES, FUENTES } from './themes';
 
 
 export default function App() {
 
   const [fuentesCargadas] = useFonts({
-    'LatoBlack': require('../assets/Fonts/Lato/Lato-Black.ttf'),
-    'LatoBlackItalic': require('../assets/Fonts/Lato/Lato-BlackItalic.ttf'),
-    'LatoBold': require('../assets/Fonts/Lato/Lato-Bold.ttf'),
-    'LatoBoldItalic': require('../assets/Fonts/Lato/Lato-BoldItalic.ttf'),
-    'LatoItalic': require('../assets/Fonts/Lato/Lato-Italic.ttf'),
-    'LatoLight': require('../assets/Fonts/Lato/Lato-Light.ttf'),
-    'LatoLightItalix': require('../assets/Fonts/Lato/Lato-LightItalic.ttf'),
-    'LatoRegular': require('../assets/Fonts/Lato/Lato-Regular.ttf'),
-    'LatoThin': require('../assets/Fonts/Lato/Lato-Thin.ttf'),
-    'LatoThinItalic': require('../assets/Fonts/Lato/Lato-ThinItalic.ttf'),
+    [FUENTES.black]:require('../assets/Fonts/Lato/Lato-Black.ttf'),
+    [FUENTES.blackItalic]: require('../assets/Fonts/Lato/Lato-BlackItalic.ttf'),
+    [FUENTES.bold]: require('../assets/Fonts/Lato/Lato-Bold.ttf'),
+    [FUENTES.boldItalic]: require('../assets/Fonts/Lato/Lato-BoldItalic.ttf'),
+    [FUENTES.italic]: require('../assets/Fonts/Lato/Lato-Italic.ttf'),
+    [FUENTES.light]: require('../assets/Fonts/Lato/Lato-Light.ttf'),
+    [FUENTES.lightItalic]: require('../assets/Fonts/Lato/Lato-LightItalic.ttf'),
+    [FUENTES.regular]: require('../assets/Fonts/Lato/Lato-Regular.ttf'),
+    [FUENTES.thin]: require('../assets/Fonts/Lato/Lato-Thin.ttf'),
+    [FUENTES.thinItalic]: require('../assets/Fonts/Lato/Lato-ThinItalic.ttf'),
   });
           
   const [estaCategoriaSeleccionada, setEstaCategoriaSeleccionada]= useState(false)
