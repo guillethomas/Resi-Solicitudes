@@ -21,7 +21,7 @@ function RotacionDetalles ({ categoriaSeleccionada, categoriaIdSeleccionada }) {
           <Text style={styles.textoCategoria}>1234567890</Text>
        </View>
        <View style={styles.contenedorCategoria}>
-          <Text style={styles.textoEtiqueta}>Fecha de Nacimiento: </Text>
+          <Text style={styles.textoEtiqueta}>Fecha de nacimiento: </Text>
           <Text style={styles.textoCategoria}>01/01/2000</Text>
         </View>
         <View style={styles.contenedorCategoria}>

@@ -50,14 +50,14 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.container}>
-          <Header title={tituloHeader}/>
-          {estaCategoriaSeleccionada ? (
-          <RotacionDetalles categoriaSeleccionada={navegacion}/>
-          ) : (
-          <RotacionSolicitud categoriaSeleccionada={guardarCategoria} />
-          )}
-      </View>
+        <View style={styles.container}>
+            <Header title={tituloHeader}/>
+            {estaCategoriaSeleccionada ? (
+            <RotacionDetalles categoriaSeleccionada={navegacion}/>
+            ) : (
+            <RotacionSolicitud categoriaSeleccionada={guardarCategoria} />
+            )}
+        </View>
     </SafeAreaView>
   )
 }

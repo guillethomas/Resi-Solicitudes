@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
   textoEtiqueta: {
     fontSize:18,
     color: COLORES.neutral,
-    fontFamily: FUENTES.regular,
+    fontFamily: FUENTES.bold,
   },
 
   textoCategoria: {
