@@ -1,11 +1,12 @@
-import { FlatList, SafeAreaView, View, StyleSheet, Text} from 'react-native';
-import { Header, ItemCategoria } from './components';
+import { SafeAreaView, View, StyleSheet, Text} from 'react-native';
+import { Header } from './components';
 import {RotacionSolicitud, RotacionDetalles} from './screens'
 import CATEGORIAS from './constants/data/solicitudesRotacion.json'
 import { useState } from 'react';
 import { ActivityIndicator } from 'react-native';
 import { useFonts } from 'expo-font';
 import { COLORES, FUENTES } from './themes';
+import {NavegacionPrincipal} from './navigation';
 
 
 export default function App() {
