@@ -7,8 +7,8 @@ const Stack = createNativeStackNavigator();
 
 function NavegacionRotacionSolicitud () {
     return (
-        <Stack.Navigator initialRouteName="rotacionSolicitudes ">
-            <Stack.Screen name="rotacionSolicitudes" component={rotacionSolicitud}/>
+        <Stack.Navigator initialRouteName="rotacionSolicitud ">
+            <Stack.Screen name="rotacionSolicitud" component={rotacionSolicitud}/>
             <Stack.Screen name="rotacionDetalles" component={rotacionDetalles}/>
         </Stack.Navigator>
 
