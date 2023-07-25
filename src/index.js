@@ -1,12 +1,8 @@
-import { SafeAreaView, View, StyleSheet, Text} from 'react-native';
-import { Header } from './components';
-import {RotacionSolicitud, RotacionDetalles} from './screens'
-import CATEGORIAS from './constants/data/solicitudesRotacion.json'
-import { useState } from 'react';
+import { SafeAreaView, View, StyleSheet } from 'react-native';
 import { ActivityIndicator } from 'react-native';
 import { useFonts } from 'expo-font';
 import { COLORES, FUENTES } from './themes';
-import {NavegacionPrincipal} from './navigation';
+import NavegacionPrincipal from './navigation';
 
 
 export default function App() {
@@ -24,20 +20,6 @@ export default function App() {
     [FUENTES.thinItalic]: require('../assets/Fonts/Lato/Lato-ThinItalic.ttf'),
   });
           
-  const [estaCategoriaSeleccionada, setEstaCategoriaSeleccionada]= useState(false)
-  const tituloHeader = estaCategoriaSeleccionada ? 'Detalles de la rotación' : 'Solicitudes de rotación'
-  const [guardarCategoriaSeleccionada, setGuardarCategoriaSeleccionada] = useState(null)
-  
-
-  const guardarCategoria = (idCategoria) => {
-    setGuardarCategoriaSeleccionada(idCategoria);
-    setEstaCategoriaSeleccionada(!estaCategoriaSeleccionada);
-  };
-
-  const navegacion = () => {
-    setEstaCategoriaSeleccionada(!estaCategoriaSeleccionada);
-    setGuardarCategoriaSeleccionada(null);
-  };
 
   if (!fuentesCargadas) {
     return (
@@ -47,10 +29,9 @@ export default function App() {
     );
   }
 
-
   return (
     <SafeAreaView style={styles.container}>
-      <NavegacionPrincipal></NavegacionPrincipal>
+      <NavegacionPrincipal />
     </SafeAreaView>
   )
 }

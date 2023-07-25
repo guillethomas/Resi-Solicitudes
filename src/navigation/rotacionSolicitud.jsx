@@ -1,5 +1,5 @@
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import {rotacionSolicitud, rotacionDetalles} from "../screens"
+import { RotacionSolicitud, RotacionDetalles } from "../screens"; 
 
 
 const Stack = createNativeStackNavigator();
@@ -7,12 +7,11 @@ const Stack = createNativeStackNavigator();
 
 function NavegacionRotacionSolicitud () {
     return (
-        <Stack.Navigator initialRouteName="rotacionSolicitud ">
-            <Stack.Screen name="rotacionSolicitud" component={rotacionSolicitud}/>
-            <Stack.Screen name="rotacionDetalles" component={rotacionDetalles}/>
+        <Stack.Navigator initialRouteName="RotacionSolicitud">
+            <Stack.Screen name="RotacionSolicitud" component={RotacionSolicitud} /> 
+            <Stack.Screen name="RotacionDetalles" component={RotacionDetalles} />
         </Stack.Navigator>
-
-    )
+    );
 }
 
 export default NavegacionRotacionSolicitud;

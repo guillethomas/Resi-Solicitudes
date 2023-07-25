@@ -1,5 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
-import NavegacionRotacionSolicitud from './rotacionSolicitud.jsx';
+import NavegacionRotacionSolicitud from './rotacionSolicitud';
 
 function NavegacionPrincipal() {
 
