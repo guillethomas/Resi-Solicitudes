@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { COLORES, FUENTES } from "../../../themes";
+import {Ionicons} from "@expo/vector-icons"
 
 export const styles = StyleSheet.create ({
     contenedor: {
@@ -19,7 +20,7 @@ export const styles = StyleSheet.create ({
 
     nombre: {
         fontSize:18,
-        color:  COLORES.primaryStrong,
+        color:  COLORES.primary,
         fontFamily: FUENTES.bold,
     },
 
