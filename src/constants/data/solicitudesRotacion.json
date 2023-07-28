@@ -56,7 +56,7 @@
         "inicio":"Marzo 2024",
         "fin":"Mayo 2023",
         "fechaSolicitud":"05/06/23",
-        "estado":"Aceptada"
+        "estado":"Revisar"
     },
 
     {
@@ -71,6 +71,6 @@
         "inicio":"Noviembre 2023",
         "fin":"Marzo 2024",
         "fechaSolicitud":"22/03/23",
-        "estado":"Rechazada"
+        "estado":"En espera"
     }
 ]

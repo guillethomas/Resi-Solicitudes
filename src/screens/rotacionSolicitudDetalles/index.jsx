@@ -1,39 +1,40 @@
-import { View, Text, Button } from 'react-native';
+import { View, Text } from 'react-native';
 import { styles } from './styles';
 import SOLICITUDES from '../../constants/data/solicitudesRotacion.json';
 
-function RotacionDetalles ({ navigation, route }) {
+function RotacionSolicitudDetalles ({ navigation, route }) {
 
-  const {idSolicitud, nombreSolicitud, apellidoSolicitud, documentoSolicitud, nacimientoSolicitud, hospitalSolicitud, anioResidenciaSolicitud} = route.params;
+  const {idSolicitud} = route.params;
+  const solicitud = SOLICITUDES.find((solicitud)=>solicitud.id === idSolicitud)
 
   return (
     <View>
         <View style={styles.contenedorCategoria}>
           <Text style={styles.textoEtiqueta}>Nombre: </Text>
-          <Text style={styles.textoCategoria}>{nombreSolicitud}</Text>
+          <Text style={styles.textoCategoria}>{solicitud.nombre}</Text>
         </View>
         <View style={styles.contenedorCategoria}>
           <Text style={styles.textoEtiqueta}>Apellido: </Text>
-          <Text style={styles.textoCategoria}>{apellidoSolicitud}</Text>
+          <Text style={styles.textoCategoria}>{solicitud.apellido}</Text>
         </View>
         <View style={styles.contenedorCategoria}>
           <Text style={styles.textoEtiqueta}>Documento de identidad: </Text>
-          <Text style={styles.textoCategoria}>{documentoSolicitud}</Text>
+          <Text style={styles.textoCategoria}>{solicitud.dni}</Text>
        </View>
        <View style={styles.contenedorCategoria}>
           <Text style={styles.textoEtiqueta}>Fecha de nacimiento: </Text>
-          <Text style={styles.textoCategoria}>{nacimientoSolicitud}</Text>
+          <Text style={styles.textoCategoria}>{solicitud.fechaNacimiento}</Text>
         </View>
         <View style={styles.contenedorCategoria}>
           <Text style={styles.textoEtiqueta}>Hospital de origen: </Text>
-          <Text style={styles.textoCategoria}>{hospitalSolicitud}</Text>
+          <Text style={styles.textoCategoria}>{solicitud.hospitalOrigen}</Text>
         </View>
         <View style={styles.contenedorCategoria}>
           <Text style={styles.textoEtiqueta}>Año de residencia: </Text>
-          <Text style={styles.textoCategoria}>{anioResidenciaSolicitud}</Text>
+          <Text style={styles.textoCategoria}>{solicitud.anioResidencia}</Text>
         </View>
     </View>
   )
 }
 
-export default RotacionDetalles;
+export default RotacionSolicitudDetalles;

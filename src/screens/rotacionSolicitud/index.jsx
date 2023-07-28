@@ -5,8 +5,8 @@ import { styles } from './styles';
 
 function  RotacionSolicitud({navigation}) {
   
-  const solicitudSeleccionada = ({idSolicitud, nombreSolicitud, apellidoSolicitud, documentoSolicitud, nacimientoSolicitud, hospitalSolicitud, anioResidenciaSolicitud}) => {
-    navigation.navigate('RotacionDetalles', {idSolicitud, nombreSolicitud, apellidoSolicitud, documentoSolicitud, nacimientoSolicitud, hospitalSolicitud, anioResidenciaSolicitud})
+  const solicitudSeleccionada = ({idSolicitud, estadoSolicitud}) => {
+    navigation.navigate('Detalles de la solicitud', {idSolicitud, estadoSolicitud})
   }
 
   return (
@@ -14,7 +14,7 @@ function  RotacionSolicitud({navigation}) {
       <View style={styles.container}>
           <FlatList 
             data={SOLICITUDES} 
-            renderItem={({item})=> <ItemCategoria {...item} solicitudSeleccionada={()=>solicitudSeleccionada({idSolicitud: item.id, nombreSolicitud: item.nombre, apellidoSolicitud: item.apellido, documentoSolicitud: item.dni, nacimientoSolicitud: item.fechaNacimiento, hospitalSolicitud: item.hospitalOrigen, anioResidenciaSolicitud: item.anioResidencia})}/>} 
+            renderItem={({item})=> <ItemCategoria {...item} solicitudSeleccionada={()=>solicitudSeleccionada({idSolicitud: item.id, estadoSolicitud:item.estado})}/>} 
             keyExtractor={(item)=> item.id}
             style={styles.contenedorLista}
             contentContainerStyle={styles.lista}
