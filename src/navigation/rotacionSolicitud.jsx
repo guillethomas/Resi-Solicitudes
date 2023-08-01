@@ -1,5 +1,5 @@
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import { RotacionSolicitud, RotacionSolicitudDetalles } from "../screens"; 
+import { RotacionSolicitud, RotacionSolicitudDetalles, RotacionSolicitudForm } from "../screens"; 
 import { TouchableOpacity, Text } from "react-native";
 import { COLORES, FUENTES } from "../themes";
 
@@ -41,6 +41,17 @@ function NavegacionRotacionSolicitud () {
                 },
             })}
             />
+
+            <Stack.Screen name="Nueva solicitud" component={RotacionSolicitudForm} 
+            options={({navigation, route}) => ({
+                headerLeft:()=>(
+                    <TouchableOpacity onPress={()=>navigation.goBack()}>
+                        <Text>Volver</Text>
+                    </TouchableOpacity>
+                ),
+            })}
+            />
+            
         </Stack.Navigator>
     );
 }

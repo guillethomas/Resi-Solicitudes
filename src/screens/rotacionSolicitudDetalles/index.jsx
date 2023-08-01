@@ -8,7 +8,7 @@ function RotacionSolicitudDetalles ({ navigation, route }) {
   const solicitud = SOLICITUDES.find((solicitud)=>solicitud.id === idSolicitud)
 
   return (
-    <View>
+    <View style={styles.contenedor}>
         <View style={styles.contenedorCategoria}>
           <Text style={styles.textoEtiqueta}>Nombre: </Text>
           <Text style={styles.textoCategoria}>{solicitud.nombre}</Text>

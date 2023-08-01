@@ -3,6 +3,8 @@ import { ActivityIndicator } from 'react-native';
 import { useFonts } from 'expo-font';
 import { COLORES, FUENTES } from './themes';
 import NavegacionPrincipal from './navigation';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 
 export default function App() {
@@ -30,9 +32,11 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <NavegacionPrincipal />
-    </SafeAreaView>
+    <Provider store={store}>
+      <SafeAreaView style={styles.container}>
+        <NavegacionPrincipal />
+      </SafeAreaView>
+    </Provider>
   )
 }
 

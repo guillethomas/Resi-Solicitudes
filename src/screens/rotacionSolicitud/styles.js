@@ -4,16 +4,20 @@ import { COLORES } from '../../themes';
 export const styles = StyleSheet.create({
  container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: COLORES.blanco,
+    },
+
+    contenedorPrincipal: {
+      flex: 1,
+      padding: 16,
     },
   
     contenedorLista: {
-      margin: 15,
-  
+      marginTop: 16,
     },
   
     lista: {
-      gap: 15,
+      gap: 16,
       
     },
 });

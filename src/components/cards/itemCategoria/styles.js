@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 import { COLORES, FUENTES } from "../../../themes";
-import {Ionicons} from "@expo/vector-icons"
 
 export const styles = StyleSheet.create ({
     contenedor: {
@@ -15,7 +14,7 @@ export const styles = StyleSheet.create ({
         shadowOpacity: 0.22,
         shadowRadius: 2.22,
         elevation: 3,
-        padding:15,
+        padding:16,
     },
 
     nombre: {
